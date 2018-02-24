@@ -1,4 +1,3 @@
-
 (function($) {
 
 	skel.breakpoints({
@@ -74,7 +73,8 @@
 				$main._show = function(id, initial) {
 
 					var $article = $main_articles.filter('#' + id);
-					$("#weddingmap").attr("src", $("#weddingmap").attr("data-src"));
+					//$("#weddingmap").attr("src", $("#weddingmap").attr("data-src"));
+					$("#map").attr("src", $("#map").attr("data-src"));
 
 					// No such article? Bail.
 						if ($article.length == 0)
@@ -181,7 +181,7 @@
 
 											$article.addClass('active');
 											/*$("#weddingmap").attr("src", "https://snazzymaps.com/embed/49220");*/
-											$("#weddingmap").attr("src", $("#weddingmap").attr("data-src"));
+											//$("#weddingmap").attr("src", $("#weddingmap").attr("data-src"));
 
 											// Window stuff.
 												$window
