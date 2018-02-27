@@ -73,8 +73,9 @@
 				$main._show = function(id, initial) {
 
 					var $article = $main_articles.filter('#' + id);
+					initMap();
 					//$("#weddingmap").attr("src", $("#weddingmap").attr("data-src"));
-					$("#map").attr("src", $("#map").attr("data-src"));
+					//$("#map").attr("src", $("#map").attr("data-src"));
 
 					// No such article? Bail.
 						if ($article.length == 0)
@@ -180,8 +181,7 @@
 										setTimeout(function() {
 
 											$article.addClass('active');
-											/*$("#weddingmap").attr("src", "https://snazzymaps.com/embed/49220");*/
-											//$("#weddingmap").attr("src", $("#weddingmap").attr("data-src"));
+											initMap();
 
 											// Window stuff.
 												$window
