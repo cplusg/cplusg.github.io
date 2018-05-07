@@ -25,6 +25,10 @@
 		opacity: 0;
 	}
 
+	.noline{
+		border-bottom: none;
+	}
+
 	#map{
 		height: 300px;
 		width: 100%;
